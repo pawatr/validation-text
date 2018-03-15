@@ -7,11 +7,11 @@
     tools:context="com.example.odd.myfirstlibrary.MainActivity">
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/textInput"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_margin_medium"
-        android:hint="@string/email"
+        android:hint="ip address"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,6 +26,6 @@
         android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+        app:layout_constraintTop_toBottomOf="@id/textInput" />
 
 </android.support.constraint.ConstraintLayout>

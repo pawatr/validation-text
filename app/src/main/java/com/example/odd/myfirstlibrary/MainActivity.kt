@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnSubmit.setOnClickListener {
-            if (!edtEmail.text.toString().isEmpty()) {
-                val result = ValidationText(this).validEmail(edtEmail.text.toString())
+            if (!textInput.text.toString().isEmpty()) {
+                val result = ValidationText(this).validIPAdress(textInput.text.toString())
                 if (result) {
-                    Toast.makeText(this@MainActivity, "it is email", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "it is ip", Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(this@MainActivity, "it isn't email", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "it isn't ip", Toast.LENGTH_SHORT).show()
                 }
             }
         }

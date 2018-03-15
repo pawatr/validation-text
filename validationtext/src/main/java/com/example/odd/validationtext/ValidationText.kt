@@ -18,6 +18,15 @@ class ValidationText(val context: Context) {
         return true
     }
 
+    fun validIPAdress(ip: String): Boolean {
+        if (isEmptyData(ip)) {
+
+        } else if (!Patterns.IP_ADDRESS.matcher(ip).matches()) {
+            return false
+        }
+        return true
+    }
+
     private fun isEmptyData(data: String?): Boolean {
         return data == null || data == ""
     }
